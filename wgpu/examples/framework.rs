@@ -278,6 +278,9 @@ fn start<E: Example>(
                     example.update(event);
                 }
             },
+            event::Event::MainEventsCleared => {
+                window.request_redraw();
+            }
             event::Event::RedrawRequested(_) => {
                 #[cfg(not(target_arch = "wasm32"))]
                 {
