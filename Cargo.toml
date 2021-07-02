@@ -23,3 +23,7 @@ default-members = ["wgpu", "player", "wgpu-hal"]
 #web-sys = { path = "../wasm-bindgen/crates/web-sys" }
 #js-sys = { path = "../wasm-bindgen/crates/js-sys" }
 #wasm-bindgen = { path = "../wasm-bindgen" }
+
+[patch."https://github.com/gfx-rs/gfx"]
+gfx-backend-metal = { git = "https://github.com/CurryPseudo/gfx", branch="metal-cap" }
+gfx-hal = { git = "https://github.com/CurryPseudo/gfx", branch="metal-cap" }
