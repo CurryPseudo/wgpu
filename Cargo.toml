@@ -25,6 +25,8 @@ default-members = ["wgpu"]
 #gfx-backend-dx12 = { path = "../gfx/src/backend/dx12" }
 #gfx-backend-dx11 = { path = "../gfx/src/backend/dx11" }
 #gfx-backend-metal = { path = "../gfx/src/backend/metal" }
+# gfx-backend-metal = { git = "https://github.com/CurryPseudo/gfx", branch="metal-cap" }
+# gfx-hal = { git = "https://github.com/CurryPseudo/gfx", branch="metal-cap" }
 
 [patch.crates-io]
 #web-sys = { path = "../wasm-bindgen/crates/web-sys" }
